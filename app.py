@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.datasets import load_diabetes
+import sklearn as sk
+from sk.datasets import load_diabetes
+
 
 
 # (streamlit run app.py) to run the app
