@@ -4,13 +4,13 @@ import pickle
 from sklearn.datasets import load_diabetes
 
 
-# (streamlit run app.py) para correr la app
+# (streamlit run app.py) to run the app
 
 st.title('This app is to predict the glucose level in the blood of a dibaetic patient')
 
-model_lr = pickle.load(open('Models\model_lr.pkl', 'rb'))
-model_en = pickle.load(open('Models\model_en.pkl', 'rb'))
-model_ridge = pickle.load(open('Models\model_ridge.pkl', 'rb'))
+model_lr = pickle.load(open('model_lr.pkl', 'rb'))
+model_en = pickle.load(open('model_en.pkl', 'rb'))
+model_ridge = pickle.load(open('model_ridge.pkl', 'rb'))
 
 # load the dataset
 diab=load_diabetes()
